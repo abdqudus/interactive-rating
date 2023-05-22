@@ -1,7 +1,7 @@
-var clickedButton = document.querySelectorAll(".btn");
+const clickedButton = document.querySelectorAll(".btn");
 let rating;
 console.log(rating);
-for (var i = 0; i < clickedButton.length; i++) {
+for (let i = 0; i < clickedButton.length; i++) {
   clickedButton[i].addEventListener("click", function () {
     rating = parseInt(this.innerHTML) - 1;
     console.log(rating);
